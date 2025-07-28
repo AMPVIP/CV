@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Андрей Павлушов</title>
+    <style>
+        body {
+            background-color: #00eeff; /* Ярко-голубой фон */
+            font-family: 'Courier New', Courier, monospace; /* Шрифт в стиле 90-х */
+            color: #000080; /* Темно-синий цвет текста */
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 24px;
+            color: #FF0000; /* Красный цвет заголовков */
+        }
+        a {
+            color: #0000FF; /* Синий цвет ссылок */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+        .copyleft {
+            display:inline-block;
+            transform: rotate(180deg);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            border: 2px solid #000080; /* Темно-синяя рамка */
+            padding: 20px;
+            background-color: #FFFFFF; /* Белый фон для контейнера */
+        }
+        #Vscore { 
+        position: absolute;
+        vertical-align: top
+        }
+        canvas {/* окно тетриса */
+        border: 1px solid rgb(198, 38, 38);
+        }
+        summary {/* маскирую детейлс */
+        list-style: none;
+        color:#0000FF;
+        }
+        details {/* навыки в ряд и вверху */
+        display: inline;
+        vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Резюме</h1>
+        <h2>Андрей Павлушов</h2>
+        <p><strong>Возраст:</strong> 39 лет</p>
+        <p><strong>Телефон:</strong> +7 (918) 740-66-37</p>
+        <p><strong>Email:</strong> govorit@ro.ru</p>
+
+        <h2>Образование</h2>
+        <p>Московский Государственный Гуманитарный Университет, Факультет Информатики и математики, 2010</p>
+
+        <h2>Опыт работы</h2>
+        <p><strong>Специалист</strong>, Телематика, 2023 - 2024</p>
+        <ul>
+            <li>Администрирование СКУД и СОТ</li>
+            <li>Работа с подрядчиками</li>
+        </ul>
+        <p><strong>Инженер-исследователь</strong>, Миртек, 2018 - 2019</p>
+        <ul>
+            <li>Тестирование новых устройств и библиотек</li>
+            <li>Поддержка серверов АСКУЭ</li>
+        </ul>
+        <p><strong>Сервисный инженер</strong>, SBV-Video, 2012 - 2016</p>
+        <ul>
+            <li>Ремонт оборудования</li>
+            <li>Техническая поддержка</li>
+        </ul>
+        <p><strong>Техник</strong>, ТехноДом, 2005 - 2010</p>
+        <ul>
+            <li>Монтаж и настройка СКС</li>
+            <li>Сборка серверов</li>
+        </ul>
+        <h2>Навыки</h2>
+        <details>
+          <summary>АРМ,</summary>
+          <p><a href="https://stepik.org/cert/2544210?lang=en" target="_blank">Ansible</a></p>
+          <p><a href="https://stepik.org/cert/2560572?lang=en" target="_blank">Doker</a></p>
+          <p>Zabbix</p>
+          <p><a href="handbook.html">Bash</a></p>
+        </details>
+        <details>
+          <summary>ЭВМ,</summary>
+          <p><a href="https://www.sololearn.com/Certificate/1073-18827246/jpg/" target="_blank">Python</a></p>
+          <p><a href="https://www.sololearn.com/certificates/course/en/18827246/1024/landscape/png" target="_blank">JS</a></p>
+          <p><a href="https://www.sololearn.com/Certificate/1060-18827246/jpg/" target="_blank">SQL</a></p>
+          <p><a href="https://drive.google.com/file/d/1VMaeJis8Tv0jn0gW50c_kTBBW6r92l09/view?usp=sharing" target="_blank">AWS IoT</a></p>
+        </details>
+        <details>
+          <summary>ЛВС</summary>
+          <p><a href="https://drive.google.com/file/d/19IF9dh_AQisMSIo_G28gqNbNe-Nl3dFw/view?usp=sharing" target="_blank">Cisco</a></p>
+          <p><a href="https://drive.google.com/file/d/1QLmSDoEBGfU3Gu1qSiAAJUEjCESr4YUb/view?usp=sharing" target="_blank">Juniper</a></p>
+          <p>MikroTik</p>
+          <p>Ubiquiti</p>
+        </details>
+        <!--<ul>
+            <li>Bash, Python, JS</li>
+            <li>Cisco, MikroTik, Ubiquiti</li>
+            <li>Trassir, Hikvision, Dahua</li>
+            <li>Zigbee, LoRaWAN, M2M</li>
+            <li>CCNA, CCTV, IoT</li>
+            <li>Kali, Burp Suite, Wireshark</li>
+            <li>NFtables, pSQL, systemd, zabbix, ansible, doker, k8s</li>
+        </ul>-->
+
+        <h2>Интересы</h2>
+        <p><a href="handbook.html" target="_blank">Компюктер</a>, <a href="https://www.drive2.ru/users/kraislerr" target="_blank">авто</a>
+          , фантастика.</p>
+
+        <h2>Ссылки</h2>
+        <p><a href="https://www.linkedin.com/in/andrey-pavlushov" target="_blank">Мой LinkedIn</a></p>
+        <p><a href="https://github.com/kraislerrr" target="_blank">Мой GitHub</a></p>
+        <div id="swipeArea">
+            
+            <canvas width="160" height="320" id="game"></canvas>
+            <a id="Vscore" style="display: none"></a>
+        </div>
+        <footer>
+            <p><span class="copyleft">&copy;</span>1997г. Все права защимлены.</p>
+        </footer>
+    </div>
+    <script>
+        // License CC0 1.0 Universal 
+        // https://gist.github.com/straker/3c98304f8a6a9174efd8292800891ea1
+        // https://tetris.fandom.com/wiki/Tetris_Guideline
+    
+        // получаем доступ к холсту
+        const canvas = document.getElementById('game');
+        const context = canvas.getContext('2d');
+        var Dscor = document.getElementById('Vscore');
+        // размер квадратика
+        const grid = 16;
+        // массив с последовательностями фигур, на старте — пустой
+        var tetrominoSequence = [];
+    
+        // с помощью двумерного массива следим за тем, что находится в каждой клетке игрового поля
+        // размер поля — 10 на 20, и несколько строк ещё находится за видимой областью
+        var playfield = [];
+    
+        // заполняем сразу массив пустыми ячейками
+        for (let row = -2; row < 20; row++) {
+          playfield[row] = [];
+    
+          for (let col = 0; col < 10; col++) {
+            playfield[row][col] = 0;
+          }
+        }
+    
+        // как рисовать каждую фигуру
+        // https://tetris.fandom.com/wiki/SRS
+        const tetrominos = {
+          'I': [
+            [0,0,0,0],
+            [1,1,1,1],
+            [0,0,0,0],
+            [0,0,0,0]
+          ],
+          'J': [
+            [1,0,0],
+            [1,1,1],
+            [0,0,0],
+          ],
+          'L': [
+            [0,0,1],
+            [1,1,1],
+            [0,0,0],
+          ],
+          'O': [
+            [1,1],
+            [1,1],
+          ],
+          'S': [
+            [0,1,1],
+            [1,1,0],
+            [0,0,0],
+          ],
+          'Z': [
+            [1,1,0],
+            [0,1,1],
+            [0,0,0],
+          ],
+          'T': [
+            [0,1,0],
+            [1,1,1],
+            [0,0,0],
+          ]
+        };
+    
+        // цвет каждой фигуры
+        const colors = {
+          'I': 'cyan',
+          'O': 'yellow',
+          'T': 'purple',
+          'S': 'green',
+          'Z': 'red',
+          'J': 'blue',
+          'L': 'orange'
+        };
+    
+        // счётчик
+        let count = 0;
+        // текущая фигура в игре
+        let tetromino = getNextTetromino();
+        // следим за кадрами анимации, чтобы если что — остановить игру
+        let rAF = null;  
+        // флаг конца игры, на старте — неактивный
+        let gameOver = false;
+        // количество набранных очков на старте
+        let score = 0;
+    
+    
+        // Функция возвращает случайное число в заданном диапазоне
+        // https://stackoverflow.com/a/1527820/2124254
+        function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+    
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    
+        // создаём последовательность фигур, которая появится в игре
+        //https://tetris.fandom.com/wiki/Random_Generator
+        function generateSequence() {
+          // тут — сами фигуры
+          const sequence = ['I', 'J', 'L', 'O', 'S', 'T', 'Z'];
+    
+          while (sequence.length) {
+            // случайным образом находим любую из них
+            const rand = getRandomInt(0, sequence.length - 1);
+            const name = sequence.splice(rand, 1)[0];
+            // помещаем выбранную фигуру в игровой массив с последовательностями
+            tetrominoSequence.push(name);
+          }
+        }
+    
+        // получаем следующую фигуру
+        function getNextTetromino() {
+          // если следующей нет — генерируем
+          if (tetrominoSequence.length === 0) {
+            generateSequence();
+          }
+          // берём первую фигуру из массива
+          const name = tetrominoSequence.pop();
+          // сразу создаём матрицу, с которой мы отрисуем фигуру
+          const matrix = tetrominos[name];
+    
+          // I и O стартуют с середины, остальные — чуть левее
+          const col = playfield[0].length / 2 - Math.ceil(matrix[0].length / 2);
+    
+          // I начинает с 21 строки (смещение -1), а все остальные — со строки 22 (смещение -2)
+          const row = name === 'I' ? -1 : -2;
+    
+          // вот что возвращает функция 
+          return {
+            name: name,      // название фигуры (L, O, и т.д.)
+            matrix: matrix,  // матрица с фигурой
+            row: row,        // текущая строка (фигуры стартую за видимой областью холста)
+            col: col         // текущий столбец
+          };
+        }
+    
+        // поворачиваем матрицу на 90 градусов
+        // https://codereview.stackexchange.com/a/186834
+        function rotate(matrix) {
+          const N = matrix.length - 1;
+          const result = matrix.map((row, i) =>
+            row.map((val, j) => matrix[N - j][i])
+          );
+          // на входе матрица, и на выходе тоже отдаём матрицу
+          return result;
+        }
+    
+        // проверяем после появления или вращения, может ли матрица (фигура) быть в этом месте поля или она вылезет за его границы
+        function isValidMove(matrix, cellRow, cellCol) {
+          // проверяем все строки и столбцы
+          for (let row = 0; row < matrix.length; row++) {
+            for (let col = 0; col < matrix[row].length; col++) {
+              if (matrix[row][col] && (
+                  // если выходит за границы поля…
+                  cellCol + col < 0 ||
+                  cellCol + col >= playfield[0].length ||
+                  cellRow + row >= playfield.length ||
+                  // …или пересекается с другими фигурами
+                  playfield[cellRow + row][cellCol + col])
+                ) {
+                // то возвращаем, что нет, так не пойдёт
+                return false;
+              }
+            }
+          }
+          // а если мы дошли до этого момента и не закончили раньше — то всё в порядке
+          return true;
+        }
+    
+        // когда фигура окончательна встала на своё место
+        function placeTetromino() {
+          // обрабатываем все строки и столбцы в игровом поле
+          for (let row = 0; row < tetromino.matrix.length; row++) {
+            for (let col = 0; col < tetromino.matrix[row].length; col++) {
+              if (tetromino.matrix[row][col]) {
+    
+                // если край фигуры после установки вылезает за границы поля, то игра закончилась
+                if (tetromino.row + row < 0) {
+                  return showGameOver();
+                }
+                // если всё в порядке, то записываем в массив игрового поля нашу фигуру
+                playfield[tetromino.row + row][tetromino.col + col] = tetromino.name;
+              }
+            } 
+          }
+    
+          // проверяем, чтобы заполненные ряды очистились снизу вверх
+          for (let row = playfield.length - 1; row >= 0; ) {
+            // если ряд заполнен
+            if (playfield[row].every(cell => !!cell)) {
+              // добавляем счет
+              score += 10;
+              // делаем видимым счет
+              Dscor.style.display = "inline";
+              // очищаем его и опускаем всё вниз на одну клетку
+              for (let r = row; r >= 0; r--) {
+                for (let c = 0; c < playfield[r].length; c++) {
+                  playfield[r][c] = playfield[r-1][c];
+                }
+              }
+            }
+            else {
+              // переходим к следующему ряду
+              row--;
+            }
+          }
+          // получаем следующую фигуру
+          tetromino = getNextTetromino();
+        }
+    
+          // показываем надпись Game Over
+          function showGameOver() {
+            // прекращаем всю анимацию игры
+            cancelAnimationFrame(rAF);
+            // ставим флаг окончания
+            gameOver = true;
+            // рисуем чёрный прямоугольник посередине поля
+            context.fillStyle = 'black';
+            context.globalAlpha = 0.75;
+            context.fillRect(0, canvas.height / 2 - 30, canvas.width, 60);
+            // пишем надпись белым моноширинным шрифтом по центру
+            context.globalAlpha = 1;
+            context.fillStyle = 'white';
+            context.font = '18px monospace';
+            context.textAlign = 'center';
+            context.textBaseline = 'middle';
+            context.fillText('GAME OVER!', canvas.width / 2, canvas.height / 2);
+          }
+    
+          function showScore() {
+            Dscor.innerHTML = score;
+          }
+    
+        // главный цикл игры
+        function loop() {
+          // начинаем анимацию
+          rAF = requestAnimationFrame(loop);
+          // очищаем холст
+          context.clearRect(0,0,canvas.width,canvas.height);
+    
+          // рисуем игровое поле с учётом заполненных фигур
+          for (let row = 0; row < 20; row++) {
+            for (let col = 0; col < 10; col++) {
+              if (playfield[row][col]) {
+                const name = playfield[row][col];
+                context.fillStyle = colors[name];
+    
+                // рисуем всё на один пиксель меньше, чтобы получился эффект «в клетку»
+                context.fillRect(col * grid, row * grid, grid-1, grid-1);
+              }
+            }
+          }
+          // выводим score
+          showScore();
+          // рисуем текущую фигуру
+          if (tetromino) {
+    
+            // фигура сдвигается вниз каждые 35 кадров
+            if (++count > 35) {
+              tetromino.row++;
+              count = 0;
+    
+              // если движение закончилось — рисуем фигуру в поле и проверяем, можно ли удалить строки
+              if (!isValidMove(tetromino.matrix, tetromino.row, tetromino.col)) {
+                tetromino.row--;
+                placeTetromino();
+              }
+            }
+    
+            // не забываем про цвет текущей фигуры
+            context.fillStyle = colors[tetromino.name];
+    
+            // отрисовываем её
+            for (let row = 0; row < tetromino.matrix.length; row++) {
+              for (let col = 0; col < tetromino.matrix[row].length; col++) {
+                if (tetromino.matrix[row][col]) {
+    
+                  // и снова рисуем на один пиксель меньше
+                  context.fillRect((tetromino.col + col) * grid, (tetromino.row + row) * grid, grid-1, grid-1);
+                }
+              }
+            }
+          }
+        }
+        // управление тачем
+        const swipeArea = document.getElementById('swipeArea');
+
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchEndX = 0;
+        let touchEndY = 0;
+
+        swipeArea.addEventListener('touchstart', function(event) {
+          touchStartX = event.changedTouches[0].screenX;
+          touchStartY = event.changedTouches[0].screenY;
+        }, false);
+
+        swipeArea.addEventListener('touchend', function(event) {
+          touchEndX = event.changedTouches[0].screenX;
+          touchEndY = event.changedTouches[0].screenY;
+          handleSwipeGesture();
+        }, false);
+
+        function handleSwipeGesture() {
+          const deltaX = touchEndX - touchStartX;
+          const deltaY = touchEndY - touchStartY;
+
+          if (Math.abs(deltaX) > Math.abs(deltaY)) {
+            if (deltaX > 0) {
+              // если вправо — увеличиваем индекс в столбце
+              const col = tetromino.col + 1;
+            // если так ходить можно, то запоминаем текущее положение 
+            if (isValidMove(tetromino.matrix, tetromino.row, col)) {
+              tetromino.col = col;
+            }
+            } else {
+          // если влево, то уменьшаем индекс в столбце
+          const col = tetromino.col - 1;
+        // если так ходить можно, то запоминаем текущее положение 
+        if (isValidMove(tetromino.matrix, tetromino.row, col)) {
+          tetromino.col = col;
+        }
+        }
+      } else {
+        if (deltaY > 0) {
+        // смещаем фигуру на строку вниз
+        const row = tetromino.row + 1;
+        // если опускаться больше некуда — запоминаем новое положение
+        if (!isValidMove(tetromino.matrix, row, tetromino.col)) {
+          tetromino.row = row - 1;
+          // ставим на место и смотрим на заполненные ряды
+          placeTetromino();
+          return;
+        }
+        // запоминаем строку, куда стала фигура
+        tetromino.row = row;
+        } else {
+            // поворачиваем фигуру на 90 градусов
+        const matrix = rotate(tetromino.matrix);
+        // если так ходить можно — запоминаем
+        if (isValidMove(matrix, tetromino.row, tetromino.col)) {
+          tetromino.matrix = matrix;
+        };
+        }
+      }
+    }
+
+        // следим за нажатиями на клавиши
+        document.addEventListener('keydown', function(e) {
+          // если игра закончилась — сразу выходим
+          if (gameOver) return;
+    
+          // стрелки влево и вправо
+          if (e.which === 37 || e.which === 39) {
+            const col = e.which === 37
+              // если влево, то уменьшаем индекс в столбце, если вправо — увеличиваем
+              ? tetromino.col - 1
+              : tetromino.col + 1;
+    
+            // если так ходить можно, то запоминаем текущее положение 
+            if (isValidMove(tetromino.matrix, tetromino.row, col)) {
+              tetromino.col = col;
+            }
+          }
+    
+          // стрелка вверх — поворот
+          if (e.which === 32) {
+            // поворачиваем фигуру на 90 градусов
+            const matrix = rotate(tetromino.matrix);
+            // если так ходить можно — запоминаем
+            if (isValidMove(matrix, tetromino.row, tetromino.col)) {
+              tetromino.matrix = matrix;
+            }
+          }
+    
+          // стрелка вниз — ускорить падение
+          if(e.which === 40) {
+            // смещаем фигуру на строку вниз
+            const row = tetromino.row + 1;
+            // если опускаться больше некуда — запоминаем новое положение
+            if (!isValidMove(tetromino.matrix, row, tetromino.col)) {
+              tetromino.row = row - 1;
+              // ставим на место и смотрим на заполненные ряды
+              placeTetromino();
+              return;
+            }
+            // запоминаем строку, куда стала фигура
+            tetromino.row = row;
+          }
+        });
+    
+        // старт игры
+        rAF = requestAnimationFrame(loop);
+    </script>
+</body>
+</html>
