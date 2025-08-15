@@ -128,13 +128,28 @@
         <div id="swipeArea">
             
             <canvas width="160" height="320" id="game"></canvas>
-            <a id="Vscore" style="display: none"></a>
+            <a id="Vscore" onclick="alert(d+' '+ip+' score '+score)" style="display: none"></a>
         </div>
         <footer>
             <p><span class="copyleft">&copy;</span>1997г. Все права защимлены.</p>
         </footer>
     </div>
     <script>
+        // get time
+        var d = new Date().toString();
+      // get ip
+        var ip
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("https://api.ipify.org/?format=json")
+                .then(response => response.json())
+                .then(data => {
+                    ip = data.ip;
+                })
+                .catch(error => {
+                    console.error("Error fetching IP address:", error);
+                });
+        });
+
         // License CC0 1.0 Universal 
         // https://gist.github.com/straker/3c98304f8a6a9174efd8292800891ea1
         // https://tetris.fandom.com/wiki/Tetris_Guideline
@@ -534,4 +549,5 @@
     </script>
 </body>
 </html>
+
 
